@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27931179-a28a-4cfb-913e-dc67c7df514d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Materials/Tower.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Materials/Tower.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/tower.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/tower.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/FootIK.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/FootIK.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController 1.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0_Game/Loco/walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Loco/walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Loco/ybot@Walking Backwards.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Loco/ybot@Walking Backwards.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0_Game/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
         <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" />
         <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" />
+        <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/FootIK.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +104,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639468853816</updated>
-      <workItem from="1639468866346" duration="7704000" />
+      <workItem from="1639468866346" duration="7718000" />
+      <workItem from="1639582537431" duration="79000" />
+      <workItem from="1639587833510" duration="2811000" />
     </task>
     <servers />
   </component>
@@ -121,6 +125,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

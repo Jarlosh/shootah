@@ -5,6 +5,7 @@ namespace Scripts
 {
     public class PlayerIK : MonoBehaviour
     {
+        [SerializeField] private bool enabled;
         [SerializeField] private Animator anim;
         [SerializeField] private float distToGround = 1f;
         [SerializeField] private LayerMask walkableLayer;
@@ -12,13 +13,13 @@ namespace Scripts
         private Vector3 leftFootPos;
         private Quaternion leftrot;
         private Vector3 rightFootPos;
-        [SerializeField] private bool enabled;
+
         private void OnAnimatorIK(int layerIndex)
         {
             if (!anim || !enabled) return;
-
-            UpdateFootIK(AvatarIKGoal.LeftFoot, "LeftFootIK", ref leftFootPos);
-            UpdateFootIK(AvatarIKGoal.RightFoot, "RightFootIK", ref rightFootPos);
+            //
+            // UpdateFootIK(AvatarIKGoal.LeftFoot, "LeftFootIK", ref leftFootPos);
+            // UpdateFootIK(AvatarIKGoal.RightFoot, "RightFootIK", ref rightFootPos);
         }
 
         private void UpdateFootIK(AvatarIKGoal goal, string key, ref Vector3 pos)
@@ -38,7 +39,7 @@ namespace Scripts
             var ray = new Ray(anim.GetIKPosition(goal) + Vector3.up, Vector3.down);
             if (Physics.Raycast(ray, out var hit, distToGround + 2f, walkableLayer))
             {
-                var footPosition = pos = hit.point + Vector3.up * distToGround;
+                var footPosition = pos = hit.point + hit.normal * distToGround;
                 var dir = Vector3.Cross(transform.right, hit.normal);
                 var footRotation = leftrot = Quaternion.LookRotation(dir);
                 anim.SetIKPosition(goal, footPosition);
