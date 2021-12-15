@@ -9,6 +9,7 @@
         <e p="0_Game" t="Include">
           <e p="Scripts" t="Include">
             <e p="PlayerAnimator.cs" t="Include" />
+            <e p="PlayerIK.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
         </e>

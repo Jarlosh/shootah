@@ -20,28 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27931179-a28a-4cfb-913e-dc67c7df514d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Left Strafe Walking.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Left Strafe Walking.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Right Strafe Walking.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Right Strafe Walking.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Walking Backwards.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot@Walking Backwards.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Models/ybot.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Models/ybot.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/PlayerController.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/PlayerController.controller.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shootah/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Animation/PlayerController 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Loco/walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Loco/walking.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Loco/ybot@Walking Backwards.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Loco/ybot@Walking Backwards.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/0_Game/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/0_Game/player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +47,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/0_Game/Scripts/PlayerIK.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639468853816</updated>
-      <workItem from="1639468866346" duration="1521000" />
+      <workItem from="1639468866346" duration="7704000" />
     </task>
     <servers />
   </component>
