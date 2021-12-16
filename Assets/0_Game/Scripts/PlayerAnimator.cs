@@ -13,5 +13,7 @@ namespace Scripts
             animator.SetFloat(X, x);
             animator.SetFloat(Y, y);
         }
+        
+        
     }
 }
