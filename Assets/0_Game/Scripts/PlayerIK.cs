@@ -28,7 +28,7 @@ namespace Scripts
 
         private void UpdateWeight(FootInfo footInfo)
         {
-            var weight = anim.GetFloat(footInfo.footParamName);
+            var weight = anim.GetFloat(footInfo.ParamNameHash);
             var goal = footInfo.ikGoal;
             anim.SetIKPositionWeight(goal, weight);
             anim.SetIKRotationWeight(goal, weight);
@@ -58,11 +58,17 @@ namespace Scripts
         [Serializable]
         class FootInfo
         {
-            public string footParamName;
+            [SerializeField] string footParamName;
+            private int? _paramNameHash;
+            public int ParamNameHash
+            {
+                get { return _paramNameHash ??= Animator.StringToHash(footParamName); }
+            }
+
             public readonly AvatarIKGoal ikGoal;
             public Vector3 Position { get; set; }
             public Quaternion Rotation { get; set; }
-
+            
             public FootInfo(AvatarIKGoal ikGoal)
             {
                 this.ikGoal = ikGoal;

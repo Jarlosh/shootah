@@ -7,6 +7,7 @@ namespace Scripts
     {
         [SerializeField] private PlayerAnimator animator;
         
+
         private void Update()
         {
             CheckInput();
@@ -16,7 +17,6 @@ namespace Scripts
         {
             var vertical = Input.GetAxis("Vertical");
             var horizontal = Input.GetAxis("Horizontal");
-            print(vertical);
             animator.SetMoveValue(horizontal, vertical);
         }
     }
