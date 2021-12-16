@@ -72,16 +72,16 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.19869724
-            value: 0.0023498535
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
+            time: 0.08594402
+            value: 0.5
+            inSlope: 4.275404
+            outSlope: 4.275404
+            tangentMode: 34
             weightedMode: 0
-            inWeight: 0
-            outWeight: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.24529167
+            time: 0.26888862
             value: 1
             inSlope: 0
             outSlope: 0
@@ -90,7 +90,7 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.68148166
+            time: 0.7022224
             value: 1
             inSlope: 0
             outSlope: 0
@@ -99,8 +99,8 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.7741877
-            value: 0.0023498535
+            time: 0.79888904
+            value: 0
             inSlope: 0
             outSlope: 0
             tangentMode: 0
@@ -133,7 +133,7 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.1986972
+            time: 0.1639784
             value: 1
             inSlope: 0
             outSlope: 0
@@ -142,7 +142,7 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.2962963
+            time: 0.2688886
             value: 0
             inSlope: 0
             outSlope: 0
@@ -151,16 +151,25 @@ ModelImporter:
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
-            time: 0.68148166
+            time: 0.7022224
             value: 0
             inSlope: 0
             outSlope: 0
-            tangentMode: 0
+            tangentMode: 136
             weightedMode: 0
-            inWeight: 0
-            outWeight: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
           - serializedVersion: 3
-            time: 0.7231877
+            time: 0.7881664
+            value: 0.5
+            inSlope: 4.275738
+            outSlope: 4.275738
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.9710664
             value: 1
             inSlope: 0
             outSlope: 0

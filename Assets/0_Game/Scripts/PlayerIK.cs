@@ -9,50 +9,70 @@ namespace Scripts
         [SerializeField] private Animator anim;
         [SerializeField] private float distToGround = 1f;
         [SerializeField] private LayerMask walkableLayer;
-
-        private Vector3 leftFootPos;
-        private Quaternion leftrot;
-        private Vector3 rightFootPos;
+        
+        [SerializeField] private FootInfo leftFoot = new FootInfo(AvatarIKGoal.LeftFoot);
+        [SerializeField] private FootInfo rightFoot = new FootInfo(AvatarIKGoal.RightFoot);
 
         private void OnAnimatorIK(int layerIndex)
         {
             if (!anim || !enabled) return;
-            //
-            // UpdateFootIK(AvatarIKGoal.LeftFoot, "LeftFootIK", ref leftFootPos);
-            // UpdateFootIK(AvatarIKGoal.RightFoot, "RightFootIK", ref rightFootPos);
+            UpdateFootIK(leftFoot);
+            UpdateFootIK(rightFoot);
         }
 
-        private void UpdateFootIK(AvatarIKGoal goal, string key, ref Vector3 pos)
+        private void UpdateFootIK(FootInfo footInfo)
         {
-            UpdateWeights(goal, key);
-            CalcFootIK(goal, ref pos);
+            UpdateWeight(footInfo);
+            CalculateFootPosition(footInfo);
         }
 
-        private void UpdateWeights(AvatarIKGoal goal, string key)
+        private void UpdateWeight(FootInfo footInfo)
         {
-            anim.SetIKPositionWeight(goal, anim.GetFloat(key));
-            anim.SetIKRotationWeight(goal, anim.GetFloat(key));
+            var weight = anim.GetFloat(footInfo.footParamName);
+            var goal = footInfo.ikGoal;
+            anim.SetIKPositionWeight(goal, weight);
+            anim.SetIKRotationWeight(goal, weight);
         }
 
-        private void CalcFootIK(AvatarIKGoal goal, ref Vector3 pos)
+        private void CalculateFootPosition(FootInfo footInfo)
         {
+            var goal = footInfo.ikGoal;
             var ray = new Ray(anim.GetIKPosition(goal) + Vector3.up, Vector3.down);
             if (Physics.Raycast(ray, out var hit, distToGround + 2f, walkableLayer))
             {
-                var footPosition = pos = hit.point + hit.normal * distToGround;
+                footInfo.Position = hit.point + hit.normal * distToGround;
                 var dir = Vector3.Cross(transform.right, hit.normal);
-                var footRotation = leftrot = Quaternion.LookRotation(dir);
-                anim.SetIKPosition(goal, footPosition);
-                anim.SetIKRotation(goal, footRotation);
+                footInfo.Rotation = Quaternion.LookRotation(dir);
+                anim.SetIKPosition(goal, footInfo.Position);
+                anim.SetIKRotation(goal, footInfo.Rotation);
             }
         }
 
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(leftFootPos, 0.025f);
-            Gizmos.DrawRay(leftFootPos, leftrot * Vector3.up);
-            Gizmos.DrawSphere(rightFootPos, 0.025f);
+            leftFoot.DrawGizmos();
+            rightFoot.DrawGizmos();
+        }
+        
+        [Serializable]
+        class FootInfo
+        {
+            public string footParamName;
+            public readonly AvatarIKGoal ikGoal;
+            public Vector3 Position { get; set; }
+            public Quaternion Rotation { get; set; }
+
+            public FootInfo(AvatarIKGoal ikGoal)
+            {
+                this.ikGoal = ikGoal;
+            }
+            
+            public void DrawGizmos()
+            {
+                Gizmos.DrawSphere(Position, 0.025f);
+                Gizmos.DrawRay(Position, Rotation * Vector3.up);
+            }
         }
     }
 }
