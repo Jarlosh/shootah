@@ -6,6 +6,7 @@ namespace Scripts
     public class PlayerMouseController : MonoBehaviour
     {
         [SerializeField] private PlayerAnimator animator;
+        [SerializeField] private WeaponPivot weaponPivot;
         private Camera camera;
         [SerializeField] private bool isShooting = false;
         private Vector3 shootTarget;
@@ -18,7 +19,8 @@ namespace Scripts
                 if (value == isShooting)
                     return;
                 isShooting = value;
-                animator.SetFireState(isShooting);
+                // weaponPivot.SetArmed(isShooting);
+                // animator.SetFireState(isShooting);
             }
         }
 
